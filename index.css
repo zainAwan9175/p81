@@ -1,0 +1,59 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    /* overflow: hidden; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.ved{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    position: absolute;
+   
+}
+.vp{
+    z-index: 3;
+    
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(144, 172, 172);
+    
+   
+}
+.main::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(76, 68, 98);
+    opacity: 0.8;
+    z-index: 2;
+    position: absolute;
+
+
+}
+.mybtn{
+    
+    
+    background-color: rgb(211, 148, 22);
+   
+    z-index: 4;
+    position: absolute;
+
+    top: 500px;
+    width: 90px;
+    border-radius: 14px;
+
+}
